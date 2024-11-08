@@ -1,0 +1,17 @@
+<section class="projects-section">
+    <h2>My Projects</h2>
+    <div class="projects-grid">
+      <div *ngFor="let project of projects" class="project-card" [routerLink]="project.link">
+        <div class="project-preview">
+          <img [src]="project.image" [alt]="project.title" />
+        </div>
+        <div class="project-details">
+          <h3 class="title">{{ project.title }}</h3>
+          <p class="subtitle">{{ project.subtitle }}</p>
+          <p class="body">{{ project.description }}</p>
+        </div>
+        <div class="metadata">{{ project.metadata }}</div>
+      </div>
+    </div>
+  </section>
+  

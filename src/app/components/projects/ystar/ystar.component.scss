@@ -1,0 +1,78 @@
+.project-info {
+    padding: 2rem;
+    font-family: Arial, sans-serif;
+  
+    .project-header {
+      text-align: center;
+      margin-bottom: 2rem;
+  
+      h2 {
+        font-size: 2.5rem;
+        color: #333f42;
+      }
+  
+      .project-logo {
+        max-width: 150px;
+        margin: 1rem auto;
+      }
+    }
+  
+    .project-details, .project-gallery, .project-prototype, .project-footer {
+      margin-bottom: 2rem;
+    }
+  
+    .section h3 {
+      font-size: 1.8rem;
+      color: #333f42;
+      margin-bottom: 1rem;
+    }
+  
+    .project-image {
+      max-width: 100%;
+      height: auto;
+      margin: 1rem 0;
+    }
+  
+    .scroll-container {
+      display: flex;
+      gap: 1rem;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      padding: 1rem 0;
+  
+      .scroll-item {
+        flex: 0 0 auto;
+        scroll-snap-align: start;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        overflow: hidden;
+        text-align: center;
+  
+        .scroll-image {
+          max-width: 300px;
+          height: auto;
+          margin-bottom: 0.5rem;
+        }
+  
+        .image-caption {
+          font-size: 1rem;
+          color: #555;
+        }
+      }
+    }
+  
+    video {
+      width: 100%;
+      margin: 1rem 0;
+    }
+  
+    .project-footer {
+      text-align: center;
+  
+      .project-image {
+        max-width: 400px;
+        margin: 1rem auto;
+      }
+    }
+  }
+  
