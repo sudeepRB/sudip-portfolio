@@ -1,0 +1,15 @@
+{
+  "routes": [
+    "/",
+    "/contact",
+    "/projects",
+    "/projects/galaxyfire",
+    "/projects/jerseypkr",
+    "/projects/logos",
+    "/projects/lovebattery",
+    "/projects/motiongraphics",
+    "/projects/wishlist",
+    "/projects/ystar",
+    "/skills"
+  ]
+}
