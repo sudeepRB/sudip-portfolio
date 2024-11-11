@@ -1,0 +1,89 @@
+/* Enhanced CSS for JerseyPkr Page */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .project-info {
+    .project-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 2rem;
+      h2 {
+        font-size: 2.5rem;
+        color: #2c3e50; /* Blue theme for header */
+      }
+      .project-logo {
+        max-height: 60px;
+      }
+    }
+  
+    .section {
+      margin-bottom: 2rem;
+      padding: 1.5rem;
+      border-left: 4px solid #2980b9; /* Blue border color */
+      background-color: #ecf0f1; /* Light background */
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  
+      h3 {
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+        display: flex;
+        align-items: center;
+        color: #2980b9; /* Blue title color */
+        .icon {
+          margin-right: 0.5rem;
+        }
+      }
+  
+      .highlighted-text {
+        font-style: italic;
+        color: #34495e;
+        font-size: large;
+      }
+  
+      .tech-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        span {
+          background-color: #2980b9; /* Blue color for badges */
+          color: #fff;
+          padding: 0.5rem 1rem;
+          border-radius: 20px;
+          font-size: 0.9rem;
+        }
+      }
+    }
+  
+    .layout-image, .mockup-image {
+      max-width: 100%;
+      width: calc(33% - 1rem);
+      margin: 0.5rem 0;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      background-color: #f9f9f9;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease-in-out;
+      cursor: pointer;
+  
+      &:hover {
+        transform: scale(1.05);
+      }
+  
+      &:active {
+        transform: scale(1.1);
+      }
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .layout-image, .mockup-image {
+      width: 100%;
+    }
+  }
+  

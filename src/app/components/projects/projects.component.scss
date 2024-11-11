@@ -2,13 +2,13 @@
     padding: 2rem;
     max-width: 1200px;
     margin: auto;
-    background-color: #ebefe2;
+    background-color: #f8faff;
     color: #e0e0e0;
   
     h2 {
       text-align: center;
       font-size: 2.5rem;
-      color: #b03060;
+      color: #2c3e50;
       margin-bottom: 2rem;
     }
   
@@ -21,7 +21,7 @@
     .project-card {
       display: flex;
       flex-direction: column;
-      background-color: #523232;
+      background-color: #2c3e50;
       border-radius: 12px;
       overflow: hidden;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -72,8 +72,8 @@
         font-size: 0.9rem;
         color: #af8f8f;
         padding: 0.75rem 1rem;
-        background-color: #3b2b2b;
-        border-top: 1px solid #6e4b4b;
+        background-color: #f8faff;
+        border-top: 1px solid #f8faff;
         text-align: center;
         min-height: 2rem; /* Ensures consistent height */
         display: flex;

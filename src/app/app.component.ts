@@ -11,6 +11,20 @@ import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
 })
 export class AppComponent {
   title = 'sudip-portfolio';
+  menuOpen = false;
+
+toggleMenu() {
+  this.menuOpen = !this.menuOpen;
+  const links = document.querySelectorAll('.nav-link');
+  links.forEach(link => {
+    if (this.menuOpen) {
+      link.classList.add('show');
+    } else {
+      link.classList.remove('show');
+    }
+  });
+}
+
 
 
 }

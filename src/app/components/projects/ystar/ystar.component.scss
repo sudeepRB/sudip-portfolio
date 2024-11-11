@@ -1,78 +1,175 @@
-.project-info {
-    padding: 2rem;
-    font-family: Arial, sans-serif;
+.container {
+    max-width: 1200px; /* Ensures consistent width */
+    margin: 0 auto; /* Centers the container */
+    padding: 0 20px; /* Adds spacing on the sides */
+  }
   
+  .project-info {
     .project-header {
-      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
       margin-bottom: 2rem;
-  
       h2 {
         font-size: 2.5rem;
-        color: #333f42;
+        color: #2c3e50;
       }
-  
       .project-logo {
-        max-width: 150px;
-        margin: 1rem auto;
+        max-height: 60px;
       }
     }
   
-    .project-details, .project-gallery, .project-prototype, .project-footer {
+    .section {
       margin-bottom: 2rem;
-    }
+      padding: 1.5rem;
+      border-left: 4px solid #2980b9; /* Updated to blue theme */
+      background-color: #ecf0f1; /* Updated background color */
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   
-    .section h3 {
-      font-size: 1.8rem;
-      color: #333f42;
-      margin-bottom: 1rem;
-    }
-  
-    .project-image {
-      max-width: 100%;
-      height: auto;
-      margin: 1rem 0;
-    }
-  
-    .scroll-container {
-      display: flex;
-      gap: 1rem;
-      overflow-x: auto;
-      scroll-snap-type: x mandatory;
-      padding: 1rem 0;
-  
-      .scroll-item {
-        flex: 0 0 auto;
-        scroll-snap-align: start;
-        border: 1px solid #ddd;
-        border-radius: 8px;
-        overflow: hidden;
-        text-align: center;
-  
-        .scroll-image {
-          max-width: 300px;
-          height: auto;
-          margin-bottom: 0.5rem;
+      h3 {
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+        display: flex;
+        align-items: center;
+        color: #2980b9;
+        .icon {
+          margin-right: 0.5rem;
         }
+      }
   
-        .image-caption {
-          font-size: 1rem;
-          color: #555;
+      .highlighted-text {
+        font-style: italic;
+        color: #34495e;
+        font-size: large;
+      }
+  
+      .tech-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        span {
+          background-color: #2980b9;
+          color: #fff;
+          padding: 0.5rem 1rem;
+          border-radius: 20px;
+          font-size: 0.9rem;
+        }
+      }
+  
+      .breakdown-list {
+        list-style: none;
+        padding-left: 0;
+        li {
+          padding: 0.5rem 0;
+          border-bottom: 1px dashed #ccc;
+          &:last-child {
+            border-bottom: none;
+          }
+        }
+      }
+  
+      .project-link {
+        color: #007bff;
+        text-decoration: underline;
+        &:hover {
+          color: #0056b3;
         }
       }
     }
   
-    video {
-      width: 100%;
-      margin: 1rem 0;
+    .sitemap {
+      .sitemap-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 1rem;
+  
+        .sitemap-image {
+          width: 90%;
+          border: 2px solid #ddd;
+          border-radius: 8px;
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+          transition: transform 0.3s;
+          
+          &:hover {
+            transform: scale(1.05);
+          }
+        }
+      }
     }
   
-    .project-footer {
-      text-align: center;
+    .wireframes {
+      .scroll-container {
+        display: flex;
+        gap: 1rem;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        padding: 1rem 0;
+        border-top: 2px solid #ddd;
+        margin-top: 1rem;
   
-      .project-image {
-        max-width: 400px;
-        margin: 1rem auto;
+        .scroll-item {
+          flex: 0 0 auto;
+          scroll-snap-align: start;
+          border: 1px solid #ccc;
+          border-radius: 8px;
+          padding: 0.5rem;
+          background-color: #f9f9f9;
+          transition: transform 0.3s;
+  
+          &:hover {
+            transform: scale(1.05);
+          }
+  
+          .scroll-image {
+            max-width: 300px;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+          }
+  
+          .image-caption {
+            text-align: center;
+            margin-top: 0.5rem;
+            font-style: italic;
+            font-size: 0.9rem;
+          }
+        }
+      }
+    }
+  
+    .logo-look-feel {
+      .logo-gallery {
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+        flex-wrap: wrap;
+  
+        .logo-image {
+          width: 45%;
+          border-radius: 8px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+          transition: transform 0.3s;
+  
+          &:hover {
+            transform: scale(1.05);
+          }
+        }
       }
     }
   }
   
+  @media (max-width: 768px) {
+    .wireframes {
+      .scroll-container {
+        gap: 0.5rem;
+        .scroll-item {
+          max-width: 150px;
+        }
+      }
+    }
+  }
+  
+  .scroll-container {
+    scroll-behavior: smooth;
+  }

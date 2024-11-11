@@ -1,66 +1,93 @@
-<div class="project-info">
-    <div class="project-header">
-      <h2>YoungStar Club</h2>
-      <img src="assets/images/logo_ys.png" alt="YoungStar Club Logo" class="project-logo">
-    </div>
-  
-    <div class="project-details">
-      <div class="section">
-        <h3>Role</h3>
-        <p>To Develop a Responsive Site</p>
-      </div>
-  
-      <div class="section">
-        <h3>Technology Used</h3>
-        <p>HTML5/CSS3, JavaScript, Bootstrap, PHP, jQuery, Adobe Illustrator, Adobe Photoshop, MAMP Server, Sublime</p>
-      </div>
-  
-      <div class="section">
-        <h3>Overview</h3>
-        <p><a href="http://youngstarclub.com/" target="_blank" class="project-link">www.youngstarclub.com</a> is a football club website located in Pokhara, Nepal, founded in 2010 to promote local talent and host national and social events.</p>
-      </div>
-  
-      <div class="section">
-        <h3>Project Breakdown</h3>
-        <ul>
-          <li>Research</li>
-          <li>Brainstorming</li>
-          <li>Sitemap</li>
-          <li>Wireframe/Mockup</li>
-          <li>Feedback</li>
-          <li>Design</li>
-          <li>Development</li>
-          <li>Testing</li>
-          <li>Launching</li>
-        </ul>
-      </div>
-    </div>
-  
-    <div class="project-gallery">
-      <h3>Sitemap</h3>
-      <img src="assets/images/sitemap.png" alt="SiteMap" class="project-image">
-  
-      <h3>Wireframes of Individual Pages</h3>
-      <div class="scroll-container">
-        <div class="scroll-item" *ngFor="let wireframe of wireframeImages">
-          <img [src]="wireframe.src" [alt]="wireframe.alt" class="scroll-image">
-          <p class="image-caption">{{ wireframe.caption }}</p>
+<!-- Updated Complete HTML Structure with Consistent Container -->
+<div class="container">
+    <div class="project-info">
+        <div class="project-header">
+          <h2>YoungStar Club</h2>
+          <img src="assets/images/logo_ys.png" alt="YoungStar Club Logo" class="project-logo">
         </div>
-      </div>
-    </div>
-  
-    <div class="project-prototype">
-      <h3>Low-Mid Fidelity Prototype</h3>
-      <video width="100%" controls>
-        <source src="assets/images/prototype.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-    </div>
-  
-    <div class="project-footer">
-      <h3>Logo Design & Look and Feel</h3>
-      <img src="assets/images/font1.png" alt="Font Design" class="project-image">
-      <img src="assets/images/lf.png" alt="Look and Feel" class="project-image">
+      
+        <!-- Role Section -->
+        <div class="section role">
+          <h3><i class="icon-role"></i> Role</h3>
+          <p class="highlighted-text">Lead Developer for building a responsive and interactive website to showcase club achievements and activities.</p>
+        </div>
+      
+        <!-- Technology Used Section -->
+        <div class="section tech-used">
+          <h3><i class="icon-tech"></i> Key Tools Used</h3>
+          <div class="tech-list">
+            <span>HTML5/CSS3</span>
+            <span>JavaScript</span>
+            <span>Angular 4</span>
+            <span>Bootstrap</span>
+            <span>PHP</span>
+            <span>jQuery</span>
+            <span>Adobe Illustrator</span>
+            <span>Adobe Photoshop</span>
+            <span>MAMP Server</span>
+            <span>Sublime Text</span>
+          </div>
+        </div>
+      
+        <!-- Overview Section -->
+        <div class="section overview">
+          <h3><i class="icon-overview"></i> Overview</h3>
+          <p>
+            <a href="http://youngstarclub.com/" target="_blank" class="project-link">YoungStar Club</a> is a football club based in Pokhara, Nepal, established in 2010. The club aims to promote local talent and hosts national and local tournaments. It is also active in social activities, including blood donation drives and sanitation programs, making it a hub for both sports and community outreach.
+          </p>
+        </div>
+      
+        <!-- Project Breakdown Section -->
+        <div class="section project-breakdown">
+          <h3><i class="icon-breakdown"></i> Project Breakdown</h3>
+          <ul class="breakdown-list">
+            <li>Research & Discovery</li>
+            <li>Brainstorming Sessions</li>
+            <li>Sitemap & Wireframe Design</li>
+            <li>Client Feedback Integration</li>
+            <li>UI/UX Design</li>
+            <li>Development & Coding</li>
+            <li>Comprehensive Testing</li>
+            <li>Final Launch</li>
+          </ul>
+        </div>
+      
+        <!-- Sitemap Section -->
+        <div class="section sitemap">
+          <h3><i class="icon-sitemap"></i> Sitemap</h3>
+          <div class="sitemap-container">
+            <img src="assets/images/sitemap.png" alt="Sitemap" class="sitemap-image">
+          </div>
+        </div>
+      
+        <!-- Wireframes Section -->
+        <div class="section wireframes">
+          <h3><i class="icon-wireframe"></i> Wireframes of Individual Pages</h3>
+          <div class="scroll-container">
+            <div class="scroll-item" *ngFor="let wireframe of wireframeImages">
+              <img [src]="wireframe.src" [alt]="wireframe.alt" class="scroll-image">
+              <p class="image-caption">{{ wireframe.caption }}</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Wireframes Section -->
+        <div class="section logo-look-feel">
+            <h3>Low-Mid Fidelity Prototype</h3>
+            <video width="100%" controls>
+              <source src="assets/images/prototype.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+      
+        <!-- Logo Look and Feel Section -->
+        <div class="section logo-look-feel">
+          <h3><i class="icon-logo"></i> Logo Design & Look and Feel</h3>
+          <div class="logo-gallery">
+            <img src="assets/images/font1.png" alt="Font Design" class="logo-image">
+            <img src="assets/images/lf.png" alt="Look and Feel" class="logo-image">
+          </div>
+        </div>
     </div>
   </div>
   

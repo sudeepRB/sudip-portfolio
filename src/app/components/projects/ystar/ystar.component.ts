@@ -27,4 +27,5 @@ export class YstarComponent {
   prevSlide() {
     this.currentSlide = (this.currentSlide - 1 + this.wireframeImages.length) % this.wireframeImages.length;
   }
+  
 }
