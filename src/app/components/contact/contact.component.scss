@@ -37,8 +37,16 @@
         padding: 0.75rem;
         border: 1px solid #444;
         background-color: #f8faff;
-        color: #e0e0e0;
+        color: #2c3e50;
         border-radius: 5px;
+      }
+      .error {
+        font-size: 0.875rem;
+        color: #ff4d4f;
+        text-align: left;
+        width: 100%;
+        max-width: 500px;
+        margin: auto;
       }
   
       button.submit-btn {
@@ -48,11 +56,25 @@
         border: none;
         border-radius: 5px;
         cursor: pointer;
-        transition: background-color 0.3s ease;
+        transition: all 0.3s ease;
   
         &:hover {
           background-color: #2ea744;
         }
+        &:disabled {
+          background-color: #888;
+          cursor: not-allowed;
+        }
+      }
+      .response-message {
+        margin-top: 1rem;
+        padding: 10px;
+        border: 1px solid #ffffff;
+        border-radius: 5px;
+        color: #2c3d50;
+        font-weight: bold;
+        background-color: #e8f4fc;
+        text-align: center;
       }
     }
   
