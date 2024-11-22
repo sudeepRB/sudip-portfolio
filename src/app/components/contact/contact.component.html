@@ -1,11 +1,16 @@
 <div class="container">
   <section class="contact-section">
     <header class="contact-header">
-      <img src="assets/images/logo.png" alt="Your Logo" class="logo">
+      <img src="assets/images/logo.png" alt="Your Logo" class="logo" />
       <h2>Get in Touch – Let's Create Something Amazing!</h2>
     </header>
 
-    <form class="contact-form" (submit)="onSubmit($event)" #contactForm="ngForm">
+    <form
+      class="contact-form"
+      (ngSubmit)="onSubmit()"
+      #contactForm="ngForm"
+      novalidate
+    >
       <div class="form-group">
         <input
           type="text"
@@ -14,9 +19,11 @@
           placeholder="Your Name"
           required
           #name="ngModel"
+          minlength="7"
+          pattern="^[a-zA-Z\s]*$" 
         />
         <div class="error" *ngIf="name.invalid && name.touched">
-          Name is required.
+          Valid Full Name is required.
         </div>
       </div>
 
@@ -27,6 +34,7 @@
           [(ngModel)]="formData.email"
           placeholder="Your Email"
           required
+          email
           #email="ngModel"
         />
         <div class="error" *ngIf="email.invalid && email.touched">
@@ -40,10 +48,11 @@
           [(ngModel)]="formData.message"
           placeholder="Your Message"
           required
+          minlength="10"
           #message="ngModel"
         ></textarea>
         <div class="error" *ngIf="message.invalid && message.touched">
-          Message is required.
+          Message must be at least 10 characters long.
         </div>
       </div>
 
@@ -55,7 +64,7 @@
         {{ isSubmitting ? 'Sending...' : 'Send Message' }}
       </button>
 
-      <div *ngIf="responseMessage" class="response-message">
+      <div *ngIf="responseMessage" class="response-message" [ngClass]="responseClass">
         {{ responseMessage }}
       </div>
     </form>
@@ -77,9 +86,7 @@
     <footer class="contact-footer">
       <p>Looking forward to collaborating with you!</p>
       <p>
-        <a href="mailto:sudip.rbaral10&#64;gmail.com"
-          >sudip.rbaral10&#64;gmail.com</a
-        >
+        <a href="mailto:sudip.rbaral10&#64;gmail.com">sudip.rbaral10&#64;gmail.com</a>
       </p>
     </footer>
   </section>
